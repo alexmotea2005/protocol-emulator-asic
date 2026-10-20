@@ -9,12 +9,19 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project is a programmable protocol emulator: a small processor with an instruction set designed for
+driving and sampling I/O pins with cycle-exact timing. Instead of fixed UART, SPI or I2C blocks, each
+protocol is implemented as firmware loaded into the chip, so new protocols can be supported after fabrication.
+
+The current version is a placeholder design used to validate the build flow: the outputs `uo_out` are the
+sum of `ui_in` and `uio_in`.
 
 ## How to test
 
-Explain how to use your project
+Current placeholder: set values on `ui_in` and `uio_in` and check that `uo_out` shows their sum (modulo 256).
+
+The final design will be tested by loading a firmware program and observing UART, SPI and I2C traffic on the output pins.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None for the current version. The final design is intended to connect to standard UART, SPI and I2C devices.
