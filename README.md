@@ -22,6 +22,7 @@ The GitHub action will automatically build the ASIC files using [LibreLane](http
 ## Enable GitHub actions to build the results page
 
 - [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
+- Set the repository variable `ENABLE_GDS_VIEWER` to `true` after GitHub Pages is enabled.
 
 ## Resources
 
